@@ -1,0 +1,137 @@
+{
+    "Elevation of Privilege": [
+      {
+        "description": "An attacker has compromised a key technology supplier.",
+        "NIST 800-53": "SA-12 (Supply Chain Protection)",
+        "MITRE ATT&CK": "T1195 - Supply Chain Compromise",
+        "OWASP ASVS": "V14.2 Verify the integrity of third-party code and libraries."
+      },
+      {
+        "description": "An attacker can access the cloud service which manages your devices.",
+        "NIST 800-53": "AC-6 (Least Privilege)",
+        "MITRE ATT&CK": "T1078 - Valid Accounts",
+        "OWASP ASVS": "V13.1 Ensure proper access control in cloud services."
+      },
+      {
+        "description": "An attacker can escape from a container or other sandbox.",
+        "NIST 800-53": "AC-4 (Information Flow Enforcement)",
+        "MITRE ATT&CK": "T1610 - Escape to Host",
+        "OWASP ASVS": "V6.4 Ensure containers or sandboxes limit access appropriately."
+      },
+      {
+        "description": "An attacker can force data through different validation paths which give different results.",
+        "NIST 800-53": "SI-10 (Information Input Validation)",
+        "MITRE ATT&CK": "T1565 - Data Manipulation",
+        "OWASP ASVS": "V5.2 Verify that all data validation occurs on a trusted system."
+      },
+      {
+        "description": "An attacker could take advantage of permissions you set, but don't use.",
+        "NIST 800-53": "AC-6 (Least Privilege)",
+        "MITRE ATT&CK": "T1078 - Valid Accounts",
+        "OWASP ASVS": "V4.1 Ensure least privilege in permission settings."
+      },
+      {
+        "description": "An attacker can provide a pointer across a trust boundary, rather than data which can be validated.",
+        "NIST 800-53": "SC-3 (Security Function Isolation)",
+        "MITRE ATT&CK": "T1559.002 - Inter-Process Communication",
+        "OWASP ASVS": "V6.5 Ensure pointers are not exposed between processes."
+      },
+      {
+        "description": "An attacker can enter data that is checked while still under their control and used later on the other side of a trust boundary.",
+        "NIST 800-53": "SI-7 (Software, Firmware, and Information Integrity)",
+        "MITRE ATT&CK": "T1553.003 - Subvert Trust Controls",
+        "OWASP ASVS": "V7.1 Verify that data is validated both at the gateway and after crossing trust boundaries."
+      },
+      {
+        "description": "There's no reasonable way for a caller to figure out what validation of tainted data you perform before passing it to them.",
+        "NIST 800-53": "SI-10 (Information Input Validation)",
+        "MITRE ATT&CK": "T1211 - Exploitation of Remote Services",
+        "OWASP ASVS": "V5.1 Verify detailed validation error messages are provided."
+      },
+      {
+        "description": "There's no reasonable way for a caller to figure out what security assumptions you make.",
+        "NIST 800-53": "PL-8 (Information Security Architecture)",
+        "MITRE ATT&CK": "T1588.002 - Obtain Capabilities",
+        "OWASP ASVS": "V1.12 Verify that a clear security architecture is documented."
+      },
+      {
+        "description": "An attacker can reflect input back to a user, like cross site scripting.",
+        "NIST 800-53": "SI-10 (Information Input Validation)",
+        "MITRE ATT&CK": "T1211 - Exploitation of Remote Services",
+        "OWASP ASVS": "V3.3 Verify input from users is reflected securely to avoid XSS."
+      },
+      {
+        "description": "You include user-generated content within your page, possibly including the content of random URLs.",
+        "NIST 800-53": "SC-18 (Mobile Code)",
+        "MITRE ATT&CK": "T1553.001 - Mark-of-the-Web Bypass",
+        "OWASP ASVS": "V5.4 Ensure user-generated content is controlled to prevent XSS."
+      },
+      {
+        "description": "An attacker can inject a command that the system will run at a higher privilege level.",
+        "NIST 800-53": "AC-6 (Least Privilege)",
+        "MITRE ATT&CK": "T1059 - Command and Scripting Interpreter",
+        "OWASP ASVS": "V1.14 Ensure that command injection is prevented."
+      },
+      {
+        "description": "An attacker exploits an outdated administrative tool that still has default credentials to gain unauthorized access to system settings.",
+        "NIST 800-53": "AC-2 (Account Management)",
+        "MITRE ATT&CK": "T1078 - Valid Accounts",
+        "OWASP ASVS": "V2.1.4 Ensure old, default, or unnecessary accounts are disabled or removed."
+      },
+      {
+        "description": "A rogue employee escalates their access by exploiting weak session management to hijack a session of a higher-privileged user.",
+        "NIST 800-53": "AC-10 (Concurrent Session Control)",
+        "MITRE ATT&CK": "T1134 - Access Token Manipulation",
+        "OWASP ASVS": "V3.7 Verify that session tokens do not allow for session hijacking."
+      },
+      {
+        "description": "An attacker leverages a SQL injection vulnerability to alter user role permissions in a database, granting themselves admin rights.",
+        "NIST 800-53": "SI-10 (Information Input Validation)",
+        "MITRE ATT&CK": "T1484 - Domain Policy Modification",
+        "OWASP ASVS": "V5.3 Ensure robust SQL injection prevention mechanisms are in place."
+      },
+      {
+        "description": "Through phishing, an attacker convinces a user to install a malicious application that exploits operating system vulnerabilities to gain root access.",
+        "NIST 800-53": "SI-3 (Malicious Code Protection)",
+        "MITRE ATT&CK": "T1548 - Abuse Elevation Control Mechanism",
+        "OWASP ASVS": "V14.4 Educate users to recognize phishing attempts."
+      },
+      {
+        "description": "An attacker bypasses two-factor authentication using a stolen mobile device and intercepts SMS codes to access a protected network.",
+        "NIST 800-53": "IA-2 (Identification and Authentication)",
+        "MITRE ATT&CK": "T1111 - Multi-Factor Authentication Interception",
+        "OWASP ASVS": "V2.8 Ensure multi-factor authentication mechanisms are secure against interception."
+      },
+      {
+        "description": "An attacker modifies firmware on internet-connected devices to bypass security controls and monitor network traffic.",
+        "NIST 800-53": "CM-7 (Least Functionality)",
+        "MITRE ATT&CK": "T1542 - Firmware Corruption",
+        "OWASP ASVS": "V2.6 Verify firmware and software integrity at startup."
+      },
+      {
+        "description": "Using a zero-day vulnerability, an attacker escalates privileges within an application to execute arbitrary code on the server.",
+        "NIST 800-53": "SA-11 (Developer Security Testing and Evaluation)",
+        "MITRE ATT&CK": "T1068 - Exploitation for Privilege Escalation",
+        "OWASP ASVS": "V7.1 Ensure server-side code execution environments are secure."
+      },
+      {
+        "description": "An attacker exploits improper input validation in an IoT device to gain control over device operations and access restricted areas.",
+        "NIST 800-53": "SC-3 (Security Function Isolation)",
+        "MITRE ATT&CK": "T1199 - Trusted Relationship",
+        "OWASP ASVS": "V1.13 Verify proper isolation of security-sensitive services."
+      },
+      {
+        "description": "A malicious script embedded in a web advertisement exploits browser vulnerabilities to elevate privileges and steal sensitive cookies.",
+        "NIST 800-53": "SI-3 (Malicious Code Protection)",
+        "MITRE ATT&CK": "T1556 - Modify Authentication Process",
+        "OWASP ASVS": "V6.1 Ensure comprehensive validation and sanitation of user inputs and outputs."
+      },
+      {
+        "description": "An attacker injects malicious code into a shared software library used by multiple applications, gaining elevated privileges across all applications using the library.",
+        "NIST 800-53": "SA-12 (Supply Chain Protection)",
+        "MITRE ATT&CK": "T1195 - Supply Chain Compromise",
+        "OWASP ASVS": "V14.2 Verify the security of third-party code and components."
+      }
+    ]
+  }
+  

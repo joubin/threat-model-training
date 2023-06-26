@@ -1,0 +1,138 @@
+{
+    "Tampering": [
+      {
+        "description": "An attacker can modify your build system and produce signed builds of your software.",
+        "NIST 800-53": "CM-6 (Configuration Settings)",
+        "MITRE ATT&CK": "T1195 - Supply Chain Compromise",
+        "OWASP ASVS": "V14.2 Verify the integrity of build tools and environments."
+      },
+      {
+        "description": "An attacker can take advantage of your custom key exchange or integrity control which you built instead of using standard crypto.",
+        "NIST 800-53": "SC-12 (Cryptographic Key Establishment and Management)",
+        "MITRE ATT&CK": "T1553.002 - Subvert Trust Controls",
+        "OWASP ASVS": "V3.1 Verify standard algorithms and key lengths are used."
+      },
+      {
+        "description": "Your code makes access control decisions all over the place, rather than with a security kernel.",
+        "NIST 800-53": "AC-4 (Information Flow Enforcement)",
+        "MITRE ATT&CK": "T1078 - Valid Accounts",
+        "OWASP ASVS": "V4.1 Verify centralized access control management."
+      },
+      {
+        "description": "An attacker can replay data without detection because your code doesn't provide timestamps or sequence numbers.",
+        "NIST 800-53": "SC-8 (Transmission Confidentiality and Integrity)",
+        "MITRE ATT&CK": "T1565.003 - Data Manipulation: Data from Untrusted Sources",
+        "OWASP ASVS": "V10.11 Ensure replay attacks are mitigated."
+      },
+      {
+        "description": "An attacker can write to a data store your code relies on.",
+        "NIST 800-53": "SC-28 (Protection of Information at Rest)",
+        "MITRE ATT&CK": "T1496 - Resource Hijacking",
+        "OWASP ASVS": "V13.2 Verify authorization checks are in place for data access."
+      },
+      {
+        "description": "An attacker can bypass permissions because you don't make names canonical before checking access permissions.",
+        "NIST 800-53": "AC-6 (Least Privilege)",
+        "MITRE ATT&CK": "T1222.001 - File and Directory Permissions Modification: Linux and Mac",
+        "OWASP ASVS": "V4.3 Verify canonicalization processes."
+      },
+      {
+        "description": "An attacker can manipulate data because there's no integrity protection for data on the network.",
+        "NIST 800-53": "SC-8 (Transmission Confidentiality and Integrity)",
+        "MITRE ATT&CK": "T1565.002 - Data Manipulation: Transmitted Data Manipulation",
+        "OWASP ASVS": "V7.4 Verify integrity protection for data transmission."
+      },
+      {
+        "description": "An attacker can provide or control state information.",
+        "NIST 800-53": "SC-23 (Session Authenticity)",
+        "MITRE ATT&CK": "T1553.004 - Hijack Execution Flow: Web Session Cookie",
+        "OWASP ASVS": "V3.7 Verify state management security."
+      },
+      {
+        "description": "An attacker can alter information in a data store because it has weak/open permissions or includes a group which is equivalent to everyone ('anyone with a Facebook account').",
+        "NIST 800-53": "AC-6 (Least Privilege)",
+        "MITRE ATT&CK": "T1222.001 - File and Directory Permissions Modification: Linux and Mac",
+        "OWASP ASVS": "V13.1 Verify strong data store access control."
+      },
+      {
+        "description": "An attacker can write to some resource because permissions are granted to the world or there are no ACLs.",
+        "NIST 800-53": "AC-3 (Access Enforcement)",
+        "MITRE ATT&CK": "T1222.001 - File and Directory Permissions Modification: Linux and Mac",
+        "OWASP ASVS": "V4.1 Verify access control rules are effective and enforce principles of least privilege."
+      },
+      {
+        "description": "An attacker can change parameters over a trust boundary and after validation (for example, important parameters in a hidden field in HTML, or passing a pointer to critical memory).",
+        "NIST 800-53": "AC-4 (Information Flow Enforcement)",
+        "MITRE ATT&CK": "T1505 - Server-Side Request Forgery (SSRF)",
+        "OWASP ASVS": "V5.2 Verify all inputs are validated."
+      },
+      {
+        "description": "An attacker can load code inside your process via an extension point.",
+        "NIST 800-53": "CM-7 (Least Functionality)",
+        "MITRE ATT&CK": "T1505.003 - Server-Side Request Forgery: Web Services",
+        "OWASP ASVS": "V1.14 Verify the use of sandboxing for third-party plugins."
+      },
+      {
+        "description": "An attacker injects malicious code into the source repository to alter the application's behavior without detection.",
+        "NIST 800-53": "SI-7 (Software, Firmware, and Information Integrity)",
+        "MITRE ATT&CK": "T1195 - Supply Chain Compromise",
+        "OWASP ASVS": "V14.2 Verify integrity of source code repositories."
+      },
+      {
+        "description": "A threat actor modifies encryption routines to weaken cryptographic operations and facilitate decryption.",
+        "NIST 800-53": "SC-12 (Cryptographic Key Establishment and Management)",
+        "MITRE ATT&CK": "T1600 - Subvert Trust Controls",
+        "OWASP ASVS": "V3.2 Verify that standard cryptographic algorithms are implemented correctly."
+      },
+      {
+        "description": "An attacker exploits inadequate input validation to overwrite application data via a buffer overflow attack.",
+        "NIST 800-53": "SI-10 (Information Input Validation)",
+        "MITRE ATT&CK": "T1203 - Exploitation for Client Execution",
+        "OWASP ASVS": "V5.1 Verify input validation to prevent buffer overflows."
+      },
+      {
+        "description": "A hacker alters database queries within the application to bypass business logic and manipulate data access.",
+        "NIST 800-53": "AC-6 (Least Privilege)",
+        "MITRE ATT&CK": "T1535 - Stored Procedure Injection",
+        "OWASP ASVS": "V6.5 Verify all database queries are secured."
+      },
+      {
+        "description": "An adversary modifies the application's runtime environment to execute unauthorized commands or access data.",
+        "NIST 800-53": "CM-7 (Least Functionality)",
+        "MITRE ATT&CK": "T1574.001 - DLL Search Order Hijacking",
+        "OWASP ASVS": "V1.11 Ensure runtime environments are secured."
+      },
+      {
+        "description": "An attacker alters API endpoints to redirect users to malicious destinations or intercept data.",
+        "NIST 800-53": "SC-7 (Boundary Protection)",
+        "MITRE ATT&CK": "T1190 - Exploit Public-Facing Application",
+        "OWASP ASVS": "V14.4 Ensure API security through proper routing and validation."
+      },
+      {
+        "description": "An attacker manipulates file permissions on shared resources to gain unauthorized access to sensitive data.",
+        "NIST 800-53": "AC-3 (Access Enforcement)",
+        "MITRE ATT&CK": "T1222.002 - File and Directory Permissions Modification: Windows",
+        "OWASP ASVS": "V13.3 Verify access control settings on files and databases."
+      },
+      {
+        "description": "A cybercriminal alters log files to hide evidence of an ongoing attack or past intrusions.",
+        "NIST 800-53": "AU-9 (Protection of Audit Information)",
+        "MITRE ATT&CK": "T1070.001 - Clear Command History",
+        "OWASP ASVS": "V7.3 Verify integrity and security of logging mechanisms."
+      },
+      {
+        "description": "An attacker changes network device configurations to reroute traffic through a monitored gateway.",
+        "NIST 800-53": "CM-2 (Baseline Configuration)",
+        "MITRE ATT&CK": "T1556.002 - Modify Device Firmware",
+        "OWASP ASVS": "V12.3 Verify security of network device configurations."
+      },
+      {
+        "description": "A threat actor inserts malicious code into third-party libraries used by the application to leverage widespread vulnerabilities.",
+        "NIST 800-53": "SA-12 (Supply Chain Protection)",
+        "MITRE ATT&CK": "T1195 - Supply Chain Compromise",
+        "OWASP ASVS": "V14.2 Verify third-party components are from trusted and reviewed sources."
+      }
+    ]
+  }
+
+  

@@ -1,0 +1,137 @@
+{
+  "Repudiation": [
+    {
+      "description": "An attacker can pass data through the log to attack a log reader, and there's no documentation of what sorts of validation are done.",
+      "NIST 800-53": "SI-7 (Software, Firmware, and Information Integrity)",
+      "MITRE ATT&CK": "T1562.002 - Impair Defenses: Disable or Modify Tools",
+      "OWASP ASVS": "V7.2 Verify all log entries require validation to prevent log injection."
+    },
+    {
+      "description": "A low privilege attacker can read interesting security information in the logs.",
+      "NIST 800-53": "AC-6 (Least Privilege)",
+      "MITRE ATT&CK": "T1552.001 - Unsecured Credentials: Credentials in Files",
+      "OWASP ASVS": "V7.1 Ensure access control is enforced on log data."
+    },
+    {
+      "description": "An attacker can alter digital signatures because the digital signature system you're implementing is weak, or uses MACs where it should use a signature.",
+      "NIST 800-53": "SC-12 (Cryptographic Key Establishment and Management)",
+      "MITRE ATT&CK": "T1553.002 - Subvert Trust Controls",
+      "OWASP ASVS": "V7.3 Verify integrity controls on data and configuration."
+    },
+    {
+      "description": "An attacker can alter log messages on a network because they lack strong integrity controls.",
+      "NIST 800-53": "SI-7 (Software, Firmware, and Information Integrity)",
+      "MITRE ATT&CK": "T1562.002 - Impair Defenses: Disable or Modify Tools",
+      "OWASP ASVS": "V7.4 Verify that all logs include integrity mechanisms."
+    },
+    {
+      "description": "An attacker can create a log entry without a timestamp (or no log entry is timestamped).",
+      "NIST 800-53": "AU-8 (Time Stamps)",
+      "MITRE ATT&CK": "T1070.006 - Indicator Removal on Host: Timestomp",
+      "OWASP ASVS": "V7.5 Verify that log entries are timestamped."
+    },
+    {
+      "description": "An attacker can make the logs wrap around and lose data.",
+      "NIST 800-53": "AU-11 (Audit and Accountability)",
+      "MITRE ATT&CK": "T1070.001 - Indicator Removal on Host: Clear Command History",
+      "OWASP ASVS": "V7.6 Ensure proper log storage and retention."
+    },
+    {
+      "description": "An attacker can make a log lose or confuse security information.",
+      "NIST 800-53": "AU-9 (Protection of Audit Information)",
+      "MITRE ATT&CK": "T1562.002 - Impair Defenses: Disable or Modify Tools",
+      "OWASP ASVS": "V7.7 Verify log accuracy and no unauthorized alterations."
+    },
+    {
+      "description": "An attacker can use a shared key to authenticate as different principals, confusing the information in the logs.",
+      "NIST 800-53": "IA-2 (Identification and Authentication)",
+      "MITRE ATT&CK": "T1078 - Valid Accounts",
+      "OWASP ASVS": "V2.4 Ensure secure authentication including the use of shared keys."
+    },
+    {
+      "description": "An attacker can get arbitrary data into logs from unauthenticated (or weakly authenticated) outsiders without validation.",
+      "NIST 800-53": "SI-10 (Information Input Validation)",
+      "MITRE ATT&CK": "T1562.002 - Impair Defenses: Disable or Modify Tools",
+      "OWASP ASVS": "V5.3 Ensure data validation for all inputs including logs."
+    },
+    {
+      "description": "An attacker can edit logs and there's no way to tell (perhaps because there's no heartbeat option for the logging system).",
+      "NIST 800-53": "AU-9 (Protection of Audit Information)",
+      "MITRE ATT&CK": "T1532 - Data Encrypted for Impact",
+      "OWASP ASVS": "V7.8 Verify log tampering detection mechanisms."
+    },
+    {
+      "description": "An attacker can say 'I didn't do that,' and you'd have no way to prove them wrong.",
+      "NIST 800-53": "AU-10 (Non-Repudiation)",
+      "MITRE ATT&CK": "T1553.002 - Subvert Trust Controls",
+      "OWASP ASVS": "V7.9 Ensure non-repudiation with strong audit capabilities."
+    },
+    {
+      "description": "The system has no logs.",
+      "NIST 800-53": "AU-1 (Audit and Accountability Policy and Procedures)",
+      "MITRE ATT&CK": "T1562.001 - Impair Defenses: Disable Logging",
+      "OWASP ASVS": "V7.10 Verify the presence of logs for all system and application activities."
+    },
+    {
+        "description": "An attacker exploits weak audit trail protections to delete logs after executing unauthorized actions.",
+        "NIST 800-53": "AU-9 (Protection of Audit Information)",
+        "MITRE ATT&CK": "T1485 - Data Destruction",
+        "OWASP ASVS": "V7.8 Ensure detection of audit log deletions or modifications."
+      },
+      {
+        "description": "A malicious insider modifies the configuration of audit logs to selectively omit certain actions they perform.",
+        "NIST 800-53": "AU-12 (Audit Generation)",
+        "MITRE ATT&CK": "T1222.001 - File and Directory Permissions Modification: Linux and Mac",
+        "OWASP ASVS": "V7.4 Verify that security logs are generated for significant events."
+      },
+      {
+        "description": "An attacker uses spoofed IP addresses to generate misleading or false log entries, obscuring the source of the attack.",
+        "NIST 800-53": "SC-7 (Boundary Protection)",
+        "MITRE ATT&CK": "T1078 - Valid Accounts",
+        "OWASP ASVS": "V7.1 Ensure that logs include accurate timestamp and source IP information."
+      },
+      {
+        "description": "A malware infects the log management system to alter or corrupt logs to prevent forensic analysis.",
+        "NIST 800-53": "SI-7 (Software, Firmware, and Information Integrity)",
+        "MITRE ATT&CK": "T1496 - Resource Hijacking",
+        "OWASP ASVS": "V7.3 Verify integrity checks are in place for log data."
+      },
+      {
+        "description": "An attacker crafts inputs that cause the logging mechanism to crash, thus preventing logging of subsequent actions.",
+        "NIST 800-53": "AU-5 (Response to Audit Processing Failures)",
+        "MITRE ATT&CK": "T1499 - Endpoint Denial of Service",
+        "OWASP ASVS": "V7.2 Verify that logging mechanisms are resilient to tampering and denial of service."
+      },
+      {
+        "description": "An attacker leverages race conditions to perform actions without leaving a trace in the logs by exploiting timing discrepancies in logging mechanisms.",
+        "NIST 800-53": "AU-8 (Time Stamps)",
+        "MITRE ATT&CK": "T1561.002 - Disk Wipe: Disk Structure Wipe",
+        "OWASP ASVS": "V7.5 Verify precision and synchronization of system clocks and timestamps."
+      },
+      {
+        "description": "A user manipulates their client-side environment to prevent certain actions from being logged.",
+        "NIST 800-53": "AU-3 (Content of Audit Records)",
+        "MITRE ATT&CK": "T1550.003 - Subvert Trust Controls: Gatekeeper Bypass",
+        "OWASP ASVS": "V7.6 Verify client-side actions are also logged server-side."
+      },
+      {
+        "description": "An attacker bypasses application logging by using deprecated API calls not monitored by current logging mechanisms.",
+        "NIST 800-53": "AU-12 (Audit Generation)",
+        "MITRE ATT&CK": "T1497 - Virtualization/Sandbox Evasion",
+        "OWASP ASVS": "V7.9 Verify comprehensive logging of legacy API usage."
+      },
+      {
+        "description": "An attacker induces errors in logging by flooding the system with high volumes of actions, causing log entries to be dropped.",
+        "NIST 800-53": "AU-5 (Response to Audit Processing Failures)",
+        "MITRE ATT&CK": "T1499.001 - Network Denial of Service",
+        "OWASP ASVS": "V7.7 Ensure that systems handle log saturation without losing vital data."
+      },
+      {
+        "description": "An attacker modifies an application's code to disable log forwarding to central management systems, isolating the evidence of an attack to local devices.",
+        "NIST 800-53": "CM-6 (Configuration Settings)",
+        "MITRE ATT&CK": "T1562.004 - Impair Defenses: Disable or Modify System Firewall",
+        "OWASP ASVS": "V7.10 Ensure log forwarding mechanisms are tamper-resistant."
+      }
+  ]
+}
+
