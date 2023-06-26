@@ -3,140 +3,130 @@
       {
         "description": "An attacker could take over the port or socket that the server normally uses.",
         "NIST 800-53": "SC-7 (Boundary Protection)",
-        "OWASP ASVS": "V1.14 Verify that the application properly verifies the identity of the user.",
+        
         "MITRE ATT&CK": "T1046 - Network Service Scanning"
       },
       {
         "description": "An attacker could try one credential after another and there's nothing to slow them down (online or offline)",
         "NIST 800-53": "AC-7 (Unsuccessful Logon Attempts)",
-        "OWASP ASVS": "V2.2 Verify that anti-automation controls are effective.",
+        
         "MITRE ATT&CK": "T1110 - Brute Force"
       },
       {
         "description": "An attacker can anonymously connect, because we expect authentication to be done at a higher level",
         "NIST 800-53": "AC-14 (Permitted Actions Without Identification or Authentication)",
-        "OWASP ASVS": "V7.1 Verify the application enforces authentication at all relevant layers.",
+        
         "MITRE ATT&CK": "T1078 - Valid Accounts"
       },
       {
         "description": "An attacker can confuse a client because there are too many ways to identify a server",
         "NIST 800-53": "SC-23 (Session Authenticity)",
-        "OWASP ASVS": "V10.3 Ensure all communications are secured and have consistent identification mechanisms.",
+        
         "MITRE ATT&CK": "T1557 - Man-in-the-Middle"
       },
       {
         "description": "An attacker can spoof a server because identifiers aren't stored on the client and checked for consistency on re-connection (that is, there's no key persistence)",
         "NIST 800-53": "IA-5 (Authenticator Management)",
-        "OWASP ASVS": "V3.1 Ensure that client-side checks are also enforced server-side.",
+        
         "MITRE ATT&CK": "T1557 - Man-in-the-Middle"
       },
       {
         "description": "An attacker can connect to a server or peer over a link that isn't authenticated (and encrypted)",
         "NIST 800-53": "SC-8 (Transmission Confidentiality and Integrity)",
-        "OWASP ASVS": "V6.2 Ensure all data transmissions are authenticated and use secure protocols.",
+        
         "MITRE ATT&CK": "T1557 - Man-in-the-Middle"
       },
       {
         "description": "An attacker could steal credentials stored on the server and reuse them (for example, a key is stored in a world readable file)",
         "NIST 800-53": "SC-28 (Protection of Information at Rest)",
-        "OWASP ASVS": "V2.3 Verify that all secrets are stored securely.",
+        
         "MITRE ATT&CK": "T1003 - Credential Dumping"
       },
       {
         "description": "An attacker who gets a password can reuse it (Use stronger authenticators)",
         "NIST 800-53": "IA-2 (Identification and Authentication)",
-        "OWASP ASVS": "V2.5 Verify password strength controls are in place.",
+        
         "MITRE ATT&CK": "T1078 - Valid Accounts"
       },
       {
         "description": "An attacker can choose to use weaker or no authentication",
         "NIST 800-53": "IA-2 (Identification and Authentication)",
-        "OWASP ASVS": "V2.1 Ensure strong authentication and session management controls.",
+        
         "MITRE ATT&CK": "T1078 - Valid Accounts"
       },
       {
         "description": "An attacker could steal credentials stored on the client and reuse them",
         "NIST 800-53": "SC-28 (Protection of Information at Rest)",
-        "OWASP ASVS": "V2.4 Ensure proper protection of stored credentials.",
+        
         "MITRE ATT&CK": "T1539 - Steal Web Session Cookie"
       },
       {
         "description": "An attacker could go after the way credentials are updated or recovered (account recovery doesn't require disclosing the old password)",
         "NIST 800-53": "IA-4 (Identifier Management)",
-        "OWASP ASVS": "V2.7 Verify all credential recovery paths are secure.",
+        
         "MITRE ATT&CK": "T1111 - Multi-Factor Authentication Interception"
       },
       {
         "description": "Your system ships with a default admin password, and doesn't force a change",
         "NIST 800-53": "IA-5 (Authenticator Management)",
-        "OWASP ASVS": "V2.4 Ensure default credentials are changed during initial setup.",
+        
         "MITRE ATT&CK": "T1098 - Account Manipulation"
       },
       {
         "description": "You've invented a new Spoofing attack",
         "NIST 800-53": "SA-1 (System and Services Acquisition)",
-        "OWASP ASVS": "V1.11 Verify security features are defined to counter identified threats.",
+        
         "MITRE ATT&CK": "T1204 - User Execution"
       },
       {
         "description": "An attacker manipulates API calls to redirect network traffic to a malicious endpoint.",
         "NIST 800-53": "AC-4 (Information Flow Enforcement)",
-        "MITRE ATT&CK": "T1566.1 - Spearphishing Attachment",
-        "OWASP ASVS": "V14.2 Verify that API endpoints enforce access control."
+        "MITRE ATT&CK": "T1566.1 - Spearphishing Attachment"
       },
       {
         "description": "A malware uses protocol spoofing to masquerade as a legitimate application to exfiltrate data.",
         "NIST 800-53": "SC-18 (Mobile Code)",
-        "MITRE ATT&CK": "T1020 - Automated Exfiltration",
-        "OWASP ASVS": "V1.13 Verify that data at rest and in transit is encrypted."
+        "MITRE ATT&CK": "T1020 - Automated Exfiltration"
       },
       {
         "description": "An attacker uses VoIP spoofing to impersonate a trusted entity for social engineering attacks.",
         "NIST 800-53": "SC-7 (Boundary Protection)",
-        "MITRE ATT&CK": "T1078 - Valid Accounts",
-        "OWASP ASVS": "V4.2 Verify that communication with trusted parties is secured."
+        "MITRE ATT&CK": "T1078 - Valid Accounts"
       },
       {
         "description": "A phishing campaign utilizes homograph attacks to trick users into visiting malicious websites.",
         "NIST 800-53": "IA-5 (Authenticator Management)",
-        "MITRE ATT&CK": "T1566 - Phishing",
-        "OWASP ASVS": "V5.1 Verify that URL validation is robust."
+        "MITRE ATT&CK": "T1566 - Phishing"
       },
       {
         "description": "An attacker sends ARP responses to associate their MAC address with the IP of a critical server.",
         "NIST 800-53": "SC-7 (Boundary Protection)",
-        "MITRE ATT&CK": "T1557 - Man-in-the-Middle",
-        "OWASP ASVS": "V6.1 Verify network architecture limits ARP spoofing capabilities."
+        "MITRE ATT&CK": "T1557 - Man-in-the-Middle"
       },
       {
         "description": "An attacker exploits the auto-fill functionality on web browsers to steal user credentials through spoofed fields.",
         "NIST 800-53": "SC-28 (Protection of Information at Rest)",
-        "MITRE ATT&CK": "T1556.003 - Modify Authentication Process",
-        "OWASP ASVS": "V3.3 Verify that the application protects against credential stuffing."
+        "MITRE ATT&CK": "T1556.003 - Modify Authentication Process"
       },
       {
         "description": "An attacker redirects DNS queries by compromising a DNS server and changing DNS records to point to malicious IPs.",
         "NIST 800-53": "SC-20 (Secure Name / Address Resolution Service (Authoritative Source))",
-        "MITRE ATT&CK": "T1568 - Dynamic Resolution",
-        "OWASP ASVS": "V10.4 Verify the integrity of DNS responses."
+        "MITRE ATT&CK": "T1568 - Dynamic Resolution"
       },
       {
         "description": "An attacker modifies email header information to spoof the sender's address and send phishing emails.",
         "NIST 800-53": "SI-7 (Software, Firmware, and Information Integrity)",
-        "MITRE ATT&CK": "T1566.1 - Spearphishing Attachment",
-        "OWASP ASVS": "V14.5 Ensure email headers are validated."
+        "MITRE ATT&CK": "T1566.1 - Spearphishing Attachment"
       },
       {
         "description": "An attacker intercepts and modifies SSL certificates exchanged during a handshake to perform a man-in-the-middle attack.",
         "NIST 800-53": "SC-12 (Cryptographic Key Establishment and Management)",
-        "MITRE ATT&CK": "T1557.004 - Man-in-the-Middle: SSL Hijacking",
-        "OWASP ASVS": "V9.3 Verify that SSL/TLS certificates are properly validated."
+        "MITRE ATT&CK": "T1557.004 - Man-in-the-Middle: SSL Hijacking"
       },
       {
         "description": "An attacker sets up a fake public Wi-Fi network using the SSID of a trusted network to gather credentials.",
         "NIST 800-53": "AC-18 (Wireless Access Restrictions)",
-        "MITRE ATT&CK": "T1083 - Rogue Wireless Access Points",
-        "OWASP ASVS": "V2.1 Verify that wireless networks use strong encryption and authentication protocols."
+        "MITRE ATT&CK": "T1083 - Rogue Wireless Access Points"
       }
     ]
   }

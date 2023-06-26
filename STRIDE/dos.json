@@ -3,134 +3,112 @@
         {
             "description": "An attacker can make your authentication system unusable or unavailable.",
             "NIST 800-53": "SC-5 (Denial of Service Protection)",
-            "MITRE ATT&CK": "T1499 - Endpoint Denial of Service",
-            "OWASP ASVS": "V4.2 Ensure authentication mechanisms can resist DoS attacks."
+            "MITRE ATT&CK": "T1499 - Endpoint Denial of Service"
         },
         {
-            "description": "An attacker can drain our easily replaceable battery.",
-            "NIST 800-53": "PE-18 (Availability)",
-            "MITRE ATT&CK": "T1499.003 - Resource Consumption",
-            "OWASP ASVS": "V4.7 Protect against battery draining attacks."
+            "description": "An attacker can flood our network with junk packets",
+            "NIST 800-53": "SC-6 (Availability)",
+            "MITRE ATT&CK": "T1499.003 - Resource Consumption"
         },
         {
-            "description": "An attacker can drain a battery that's hard to replace (sealed in a phone, an implanted medical device, or in a hard to reach location).",
-            "NIST 800-53": "PE-18 (Availability)",
-            "MITRE ATT&CK": "T1499.003 - Resource Consumption",
-            "OWASP ASVS": "V4.7 Ensure device integrity with difficult-to-replace batteries."
+            "description": "An attacker can drain upstream resources outside of our control that will prevent access to our applications",
+            "NIST 800-53": "SC-6 (Availability)",
+            "MITRE ATT&CK": "T1499.003 - Resource Consumption"
         },
         {
             "description": "An attacker can spend our cloud budget.",
             "NIST 800-53": "SI-4 (Information System Monitoring)",
-            "MITRE ATT&CK": "T1498 - Network Denial of Service",
-            "OWASP ASVS": "V2.9 Monitor and control cloud-based resources usage."
+            "MITRE ATT&CK": "T1498 - Network Denial of Service"
         },
         {
             "description": "An attacker can make a server unavailable or unusable without ever authenticating but the problem goes away when the attacker stops.",
             "NIST 800-53": "SC-5 (Denial of Service Protection)",
-            "MITRE ATT&CK": "T1499.001 - Direct Network Flood",
-            "OWASP ASVS": "V4.1 Protect against network flooding attacks."
+            "MITRE ATT&CK": "T1499.001 - Direct Network Flood"
         },
         {
             "description": "An attacker can make a client unavailable or unusable and the problem persists after the attacker goes away.",
             "NIST 800-53": "SC-5 (Denial of Service Protection)",
-            "MITRE ATT&CK": "T1499.002 - Service Stop",
-            "OWASP ASVS": "V4.10 Ensure client stability even after DoS attacks cease."
+            "MITRE ATT&CK": "T1499.002 - Service Stop"
         },
         {
             "description": "An attacker can make a server unavailable or unusable and the problem persists after the attacker goes away.",
             "NIST 800-53": "SC-5 (Denial of Service Protection)",
-            "MITRE ATT&CK": "T1499.002 - Service Stop",
-            "OWASP ASVS": "V4.11 Design services to recover from DoS attacks."
+            "MITRE ATT&CK": "T1499.002 - Service Stop"
         },
         {
             "description": "An attacker can make a client unavailable or unusable without ever authenticating and the problem persists after the attacker goes away.",
             "NIST 800-53": "SC-5 (Denial of Service Protection)",
-            "MITRE ATT&CK": "T1499.002 - Service Stop",
-            "OWASP ASVS": "V4.10 Ensure robust client-side attack recovery mechanisms."
+            "MITRE ATT&CK": "T1499.002 - Service Stop"
         },
         {
             "description": "An attacker can make a server unavailable or unusable without ever authenticating and the problem persists after the attacker goes away.",
             "NIST 800-53": "SC-5 (Denial of Service Protection)",
-            "MITRE ATT&CK": "T1499.002 - Service Stop",
-            "OWASP ASVS": "V4.11 Implement mechanisms to recover server functionality post-attack."
+            "MITRE ATT&CK": "T1499.002 - Service Stop"
         },
         {
             "description": "An attacker can cause the logging subsystem to stop working.",
             "NIST 800-53": "AU-5 (Response to Audit Processing Failures)",
-            "MITRE ATT&CK": "T1499 - Endpoint Denial of Service",
-            "OWASP ASVS": "V7.8 Ensure logging systems are resilient to tampering and DoS."
+            "MITRE ATT&CK": "T1499 - Endpoint Denial of Service"
         },
         {
             "description": "An attacker can amplify a Denial of Service attack through this component with amplification on the order of 10 to 1.",
             "NIST 800-53": "SC-5 (Denial of Service Protection)",
-            "MITRE ATT&CK": "T1498 - Network Denial of Service",
-            "OWASP ASVS": "V4.13 Prevent amplification in component-based DoS attacks."
+            "MITRE ATT&CK": "T1498 - Network Denial of Service"
         },
         {
             "description": "An attacker can amplify a Denial of Service attack through this component with amplification on the order of 100 to 1.",
             "NIST 800-53": "SC-5 (Denial of Service Protection)",
-            "MITRE ATT&CK": "T1498 - Network Denial of Service",
-            "OWASP ASVS": "V4.13 Mitigate DoS amplification factors in server components."
+            "MITRE ATT&CK": "T1498 - Network Denial of Service"
         },
         {
             "description": "An attacker overloads the authentication server with excessive login requests, causing a service slowdown for legitimate users.",
             "NIST 800-53": "SC-5 (Denial of Service Protection)",
-            "MITRE ATT&CK": "T1499.001 - Direct Network Flood",
-            "OWASP ASVS": "V2.1.6 Ensure rate limiting is applied to all high-risk endpoints."
+            "MITRE ATT&CK": "T1499.001 - Direct Network Flood"
         },
         {
             "description": "A threat actor sends malformed packets to an IoT device, causing it to reboot repeatedly and drain its battery.",
             "NIST 800-53": "SC-5 (Denial of Service Protection)",
-            "MITRE ATT&CK": "T1499.003 - Resource Consumption",
-            "OWASP ASVS": "V4.7 Ensure IoT devices are protected against malformed inputs."
+            "MITRE ATT&CK": "T1499.003 - Resource Consumption"
         },
         {
             "description": "An attacker exploits a vulnerability in the application's image processing library to cause a server crash by uploading specially crafted images.",
             "NIST 800-53": "SI-10 (Information Input Validation)",
-            "MITRE ATT&CK": "T1499 - Endpoint Denial of Service",
-            "OWASP ASVS": "V5.3 Ensure server-side validation of uploaded images to prevent crashes."
+            "MITRE ATT&CK": "T1499 - Endpoint Denial of Service"
         },
         {
             "description": "An attacker repeatedly uses an API key reset feature with forged requests, causing excessive consumption of system resources.",
             "NIST 800-53": "AC-6 (Least Privilege)",
-            "MITRE ATT&CK": "T1499.001 - Direct Network Flood",
-            "OWASP ASVS": "V4.1.2 Control resource usage per user to prevent abuse."
+            "MITRE ATT&CK": "T1499.001 - Direct Network Flood"
         },
         {
             "description": "A distributed botnet performs a credential stuffing attack on a public-facing API, leading to service degradation.",
             "NIST 800-53": "SC-5 (Denial of Service Protection)",
-            "MITRE ATT&CK": "T1486 - Data Encrypted for Impact",
-            "OWASP ASVS": "V2.1.10 Protect APIs from credential stuffing and brute force attacks."
+            "MITRE ATT&CK": "T1486 - Data Encrypted for Impact"
         },
         {
             "description": "A hacker disrupts a financial service application by triggering continuous transaction rollbacks through database locking.",
             "NIST 800-53": "SC-5 (Denial of Service Protection)",
-            "MITRE ATT&CK": "T1499.002 - Service Stop",
-            "OWASP ASVS": "V8.3 Ensure proper transaction handling to prevent application-level DoS."
+            "MITRE ATT&CK": "T1499.002 - Service Stop"
         },
         {
             "description": "An attacker induces a race condition by making concurrent, conflicting configuration changes, causing system instability.",
             "NIST 800-53": "SI-10 (Information Input Validation)",
-            "MITRE ATT&CK": "T1499 - Endpoint Denial of Service",
-            "OWASP ASVS": "V11.5 Verify that applications handle race conditions safely."
+            "MITRE ATT&CK": "T1499 - Endpoint Denial of Service"
         },
         {
             "description": "Through DNS amplification, an attacker floods an organization's servers with DNS response traffic, overwhelming network capacity.",
             "NIST 800-53": "SC-7 (Boundary Protection)",
-            "MITRE ATT&CK": "T1498 - Network Denial of Service",
-            "OWASP ASVS": "V4.13 Protect against DNS amplification attacks by securing DNS servers."
+            "MITRE ATT&CK": "T1498 - Network Denial of Service"
         },
         {
             "description": "An attacker uses session fixation to create thousands of invalid sessions on an e-commerce site, consuming server resources.",
             "NIST 800-53": "AC-10 (Concurrent Session Control)",
-            "MITRE ATT&CK": "T1558.003 - Kerberoasting",
-            "OWASP ASVS": "V3.7 Ensure robust session management to prevent fixation."
+            "MITRE ATT&CK": "T1558.003 - Kerberoasting"
         },
         {
             "description": "Malicious scripts are injected into a web application, causing endless loops that freeze user browsers and exhaust client resources.",
             "NIST 800-53": "SI-10 (Information Input Validation)",
-            "MITRE ATT&CK": "T1499.002 - Service Stop",
-            "OWASP ASVS": "V1.11 Ensure client-side input validation to prevent DoS attacks."
+            "MITRE ATT&CK": "T1499.002 - Service Stop"
         }
     ]
 }

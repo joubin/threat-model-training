@@ -3,134 +3,112 @@
     {
       "description": "An attacker can brute-force file encryption because there's no defense in place (example defense, password stretching).",
       "NIST 800-53": "SC-12 (Cryptographic Key Establishment and Management)",
-      "MITRE ATT&CK": "T1110 - Brute Force",
-      "OWASP ASVS": "V2.1.4 Ensure password hashing with key stretching mechanism."
+      "MITRE ATT&CK": "T1110 - Brute Force"
     },
     {
       "description": "An attacker can see error messages with security sensitive content.",
       "NIST 800-53": "SI-10 (Information Input Validation)",
-      "MITRE ATT&CK": "T1564.001 - Malicious File",
-      "OWASP ASVS": "V14.4 Ensure error handling does not expose sensitive information."
+      "MITRE ATT&CK": "T1564.001 - Malicious File"
     },
     {
       "description": "An attacker can read content because messages (say, an email or HTTP cookie) aren't encrypted even if the channel is encrypted.",
       "NIST 800-53": "SC-8 (Transmission Confidentiality and Integrity)",
-      "MITRE ATT&CK": "T1552.001 - Credentials in Files",
-      "OWASP ASVS": "V9.1 Verify transport layer security for sensitive communications."
+      "MITRE ATT&CK": "T1552.001 - Credentials in Files"
     },
     {
       "description": "An attacker may be able to read a document or data because it's encrypted with a non-standard algorithm.",
       "NIST 800-53": "SC-13 (Cryptography)",
-      "MITRE ATT&CK": "T1552.002 - Credentials in Registry",
-      "OWASP ASVS": "V3.1 Verify the use of standard cryptographic algorithms."
+      "MITRE ATT&CK": "T1552.002 - Credentials in Registry"
     },
     {
       "description": "An attacker can read data because it's hidden or occluded (for undo or change tracking) and the user might forget that it's there.",
       "NIST 800-53": "SC-28 (Protection of Information at Rest)",
-      "MITRE ATT&CK": "T1602 - Data from Information Repositories",
-      "OWASP ASVS": "V13.2 Verify that hidden fields and backup files are protected."
+      "MITRE ATT&CK": "T1602 - Data from Information Repositories"
     },
     {
       "description": "An attacker can act as a 'man in the middle' because you don't authenticate endpoints of a network connection.",
       "NIST 800-53": "SC-23 (Session Authenticity)",
-      "MITRE ATT&CK": "T1557 - Man-in-the-Middle",
-      "OWASP ASVS": "V10.11 Verify secure endpoint authentication."
+      "MITRE ATT&CK": "T1557 - Man-in-the-Middle"
     },
     {
       "description": "An attacker can access information through a search indexer, logger, or other such mechanism.",
       "NIST 800-53": "AC-3 (Access Enforcement)",
-      "MITRE ATT&CK": "T1213 - Data from Information Repositories",
-      "OWASP ASVS": "V6.4 Ensure data access via system components is controlled."
+      "MITRE ATT&CK": "T1213 - Data from Information Repositories"
     },
     {
       "description": "An attacker can read sensitive information in a file with permissive permissions.",
       "NIST 800-53": "AC-6 (Least Privilege)",
-      "MITRE ATT&CK": "T1083 - File and Directory Discovery",
-      "OWASP ASVS": "V13.3 Verify file permissions to protect sensitive data."
+      "MITRE ATT&CK": "T1083 - File and Directory Discovery"
     },
     {
       "description": "An attacker can read information in files or databases with no access controls.",
       "NIST 800-53": "AC-6 (Least Privilege)",
-      "MITRE ATT&CK": "T1049 - System Network Connections Discovery",
-      "OWASP ASVS": "V4.1 Ensure minimal access to resources."
+      "MITRE ATT&CK": "T1049 - System Network Connections Discovery"
     },
     {
       "description": "An attacker can discover the fixed key being used to encrypt.",
       "NIST 800-53": "SC-12 (Cryptographic Key Establishment and Management)",
-      "MITRE ATT&CK": "T1552.002 - Credentials in Registry",
-      "OWASP ASVS": "V2.2 Ensure encryption keys are managed securely."
+      "MITRE ATT&CK": "T1552.002 - Credentials in Registry"
     },
     {
       "description": "An attacker can read the entire channel because the channel (say, HTTP or SMTP) isn't encrypted.",
       "NIST 800-53": "SC-8 (Transmission Confidentiality and Integrity)",
-      "MITRE ATT&CK": "T1032 - Standard Cryptographic Protocol",
-      "OWASP ASVS": "V9.3 Verify the use of encryption for data channels."
+      "MITRE ATT&CK": "T1032 - Standard Cryptographic Protocol"
     },
     {
       "description": "An attacker can read network information because there's no cryptography used.",
       "NIST 800-53": "SC-8 (Transmission Confidentiality and Integrity)",
-      "MITRE ATT&CK": "T1040 - Network Sniffing",
-      "OWASP ASVS": "V2.3 Verify that encryption is used in data transmission."
+      "MITRE ATT&CK": "T1040 - Network Sniffing"
     },
     {
         "description": "An attacker decrypts sensitive data transmitted over an insecure legacy protocol due to lack of proper encryption.",
         "NIST 800-53": "SC-8 (Transmission Confidentiality and Integrity)",
-        "MITRE ATT&CK": "T1029 - Scheduled Transfer",
-        "OWASP ASVS": "V9.1 Ensure that older protocols have encryption upgraded."
+        "MITRE ATT&CK": "T1029 - Scheduled Transfer"
       },
       {
         "description": "An attacker extracts sensitive information through error messages generated by an SQL injection vulnerability.",
         "NIST 800-53": "SI-10 (Information Input Validation)",
-        "MITRE ATT&CK": "T1505 - Server-Side Request Forgery (SSRF)",
-        "OWASP ASVS": "V14.5 Prevent error messages from revealing details about the backend."
+        "MITRE ATT&CK": "T1505 - Server-Side Request Forgery (SSRF)"
       },
       {
         "description": "An attacker accesses configuration files containing sensitive data due to improper access controls on a cloud storage bucket.",
         "NIST 800-53": "AC-3 (Access Enforcement)",
-        "MITRE ATT&CK": "T1530 - Data from Cloud Storage Object",
-        "OWASP ASVS": "V13.2 Ensure storage buckets are configured to deny unauthorized access."
+        "MITRE ATT&CK": "T1530 - Data from Cloud Storage Object"
       },
       {
         "description": "Sensitive data is leaked via metadata in document headers which are not stripped from documents before public release.",
         "NIST 800-53": "MP-4 (Media Protection)",
-        "MITRE ATT&CK": "T1074 - Data Staged",
-        "OWASP ASVS": "V13.5 Ensure metadata is cleaned from publicly shared files."
+        "MITRE ATT&CK": "T1074 - Data Staged"
       },
       {
         "description": "An attacker sniffs network traffic to read unencrypted data being transmitted between the client and the server.",
         "NIST 800-53": "SC-7 (Boundary Protection)",
-        "MITRE ATT&CK": "T1040 - Network Sniffing",
-        "OWASP ASVS": "V2.3 Verify all data transmissions are encrypted with up-to-date standards."
+        "MITRE ATT&CK": "T1040 - Network Sniffing"
       },
       {
         "description": "An attacker utilizes directory listing vulnerabilities to discover and access unprotected files and directories on a web server.",
         "NIST 800-53": "AC-6 (Least Privilege)",
-        "MITRE ATT&CK": "T1083 - File and Directory Discovery",
-        "OWASP ASVS": "V5.4 Verify directory listing is disabled on the server."
+        "MITRE ATT&CK": "T1083 - File and Directory Discovery"
       },
       {
         "description": "A developer unintentionally logs sensitive information, such as passwords or API keys, in debug logs that are not secured.",
         "NIST 800-53": "AU-13 (Monitoring for Information Disclosure)",
-        "MITRE ATT&CK": "T1552.003 - Credentials in Configuration Files",
-        "OWASP ASVS": "V7.4 Ensure debug logs do not contain sensitive information."
+        "MITRE ATT&CK": "T1552.003 - Credentials in Configuration Files"
       },
       {
         "description": "An attacker takes advantage of a weakly implemented CAPTCHA allowing automated tools to scrape sensitive user data from the site.",
         "NIST 800-53": "AC-7 (Unsuccessful Logon Attempts)",
-        "MITRE ATT&CK": "T1110.003 - Password Spraying",
-        "OWASP ASVS": "V16.5 Verify CAPTCHAs are effectively protecting against automated data harvesting."
+        "MITRE ATT&CK": "T1110.003 - Password Spraying"
       },
       {
         "description": "Sensitive data is exposed to external systems through verbose HTTP referrer headers sent by the browser.",
         "NIST 800-53": "SC-38 (Operations Security)",
-        "MITRE ATT&CK": "T1592 - Gather Victim Host Information",
-        "OWASP ASVS": "V12.3 Ensure HTTP referrer headers do not expose sensitive paths."
+        "MITRE ATT&CK": "T1592 - Gather Victim Host Information"
       },
       {
         "description": "An attacker manipulates client-side caching mechanisms to retrieve sensitive information stored in cache files.",
         "NIST 800-53": "SC-28 (Protection of Information at Rest)",
-        "MITRE ATT&CK": "T1552.004 - Unsecured Credentials in Local Storage",
-        "OWASP ASVS": "V13.13 Verify secure handling and storage of cache data."
+        "MITRE ATT&CK": "T1552.004 - Unsecured Credentials in Local Storage"
       }
   ]
 }
