@@ -1,0 +1,371 @@
+id,name,low,moderate,high,spoofing,tampering,repudiation,information_disclosure,denial_of_service,elevation_of_privilege,lateral_movement
+AC-1,Policy and Procedures,True,True,True,False,False,False,False,False,False,False
+AC-2,Account Management,True,True,True,True,False,True,False,False,False,True
+AC-2(1),Automated System Account Management,False,True,True,True,False,False,False,False,False,False
+AC-2(2),Automated Temporary and Emergency Account Management,False,True,True,True,False,True,False,False,False,False
+AC-2(3),Disable Accounts,False,True,True,True,False,True,False,False,False,False
+AC-2(4),Automated Audit Actions,False,True,True,True,False,True,False,False,False,False
+AC-2(5),Inactivity Logout,False,True,True,True,False,False,False,False,False,False
+AC-2(11),Usage Conditions,False,False,True,False,False,False,False,False,True,False
+AC-2(12),Account Monitoring for Atypical Usage,False,False,True,True,False,True,True,False,False,True
+AC-2(13),Disable Accounts for High-risk Individuals,False,True,True,False,False,False,False,False,False,False
+AC-3,Access Enforcement,True,True,True,False,True,False,True,False,True,False
+AC-4,Information Flow Enforcement,False,True,True,True,False,False,True,False,False,False
+AC-4(4),Flow Control of Encrypted Information,False,False,True,True,False,False,True,False,False,False
+AC-5,Separation of Duties,False,True,True,False,False,False,False,False,False,False
+AC-6,Least Privilege,False,True,True,False,False,False,False,False,True,False
+AC-6(1),Authorize Access to Security Functions,False,True,True,False,False,False,False,False,True,False
+AC-6(2),Non-privileged Access for Nonsecurity Functions,False,True,True,False,False,False,False,False,True,False
+AC-6(3),Network Access to Privileged Commands,False,False,True,False,False,False,False,False,True,False
+AC-6(5),Privileged Accounts,False,True,True,False,False,False,False,False,True,False
+AC-6(7),Review of User Privileges,False,True,True,False,False,False,False,False,True,False
+AC-6(9),Log Use of Privileged Functions,False,True,True,False,False,True,False,False,True,False
+AC-6(10),Prohibit Non-privileged Users from Executing Privileged Functions,False,True,True,False,False,False,False,False,True,False
+AC-7,Unsuccessful Logon Attempts,True,True,True,True,False,False,False,False,False,False
+AC-8,System Use Notification,True,True,True,False,False,False,False,False,False,False
+AC-10,Concurrent Session Control,False,False,True,True,False,False,False,False,False,True
+AC-11,Device Lock,False,True,True,True,False,True,False,False,False,False
+AC-11(1),Pattern-hiding Displays,False,True,True,False,False,False,True,False,False,False
+AC-12,Session Termination,False,True,True,True,False,False,False,False,False,False
+AC-14,Permitted Actions Without Identification or Authentication,True,True,True,False,False,False,False,False,False,False
+AC-17,Remote Access,True,True,True,False,False,False,False,False,False,True
+AC-17(1),Monitoring and Control,False,True,True,False,False,False,False,False,False,True
+AC-17(2),Protection of Confidentiality and Integrity Using Encryption,False,True,True,False,True,False,True,False,False,False
+AC-17(3),Managed Access Control Points,False,True,True,False,False,False,False,False,False,True
+AC-17(4),Privileged Commands and Access,False,True,True,False,False,False,False,False,True,True
+AC-18,Wireless Access,True,True,True,False,False,False,False,False,False,True
+AC-18(1),Authentication and Encryption,False,True,True,False,False,False,True,False,False,True
+AC-18(3),Disable Wireless Networking,False,True,True,False,False,False,False,False,False,True
+AC-18(4),Restrict Configurations by Users,False,False,True,False,False,False,False,False,False,False
+AC-18(5),Antennas and Transmission Power Levels,False,False,True,False,False,False,False,False,False,True
+AC-19,Access Control for Mobile Devices,True,True,True,False,False,False,False,False,False,False
+AC-19(5),Full Device or Container-based Encryption,False,True,True,False,True,False,True,False,False,False
+AC-20,Use of External Systems,True,True,True,False,False,False,True,False,False,False
+AC-20(1),Limits on Authorized Use,False,True,True,False,False,False,True,False,False,False
+AC-20(2),Portable Storage Devices - Restricted Use,False,True,True,False,False,False,True,False,False,False
+AC-21,Information Sharing,False,True,True,False,False,False,False,False,False,False
+AC-22,Publicly Accessible Content,True,True,True,False,False,False,False,False,False,False
+AT-1,Policy and Procedures,True,True,True,False,False,False,False,False,False,False
+AT-2,Literacy Training and Awareness,True,True,True,False,False,False,False,False,False,False
+AT-2(2),Insider Threat,True,True,True,False,False,False,False,False,False,False
+AT-2(3),Social Engineering and Mining,False,True,True,False,False,False,False,False,False,False
+AT-3,Role-based Training,True,True,True,False,False,False,False,False,False,False
+AT-4,Training Records,True,True,True,False,False,False,False,False,False,False
+AU-1,Policy and Procedures,True,True,True,False,False,False,False,False,False,False
+AU-2,Event Logging,True,True,True,False,False,False,False,False,False,False
+AU-3,Content of Audit Records,True,True,True,False,False,True,False,False,False,False
+AU-3(1),Additional Audit Information,False,True,True,False,False,False,False,False,False,False
+AU-4,Audit Log Storage Capacity,True,True,True,False,False,False,False,True,False,False
+AU-5,Response to Audit Logging Process Failures,True,True,True,False,False,False,False,True,False,False
+AU-5(1),Storage Capacity Warning,False,False,True,False,False,False,False,True,False,False
+AU-5(2),Real-time Alerts,False,False,True,False,False,False,False,True,False,False
+AU-6,"Audit Record Review, Analysis, and Reporting",True,True,True,True,True,True,True,True,True,True
+AU-6(1),Automated Process Integration,False,True,True,False,False,False,False,False,False,False
+AU-6(3),Correlate Audit Record Repositories,False,True,True,True,True,True,True,True,True,True
+AU-6(5),Integrated Analysis of Audit Records,False,False,True,True,True,True,True,True,True,True
+AU-6(6),Correlation with Physical Monitoring,False,False,True,True,True,True,True,True,True,True
+AU-7,Audit Record Reduction and Report Generation,False,True,True,False,False,False,False,False,False,False
+AU-7(1),Automatic Processing,False,True,True,False,False,False,False,False,False,False
+AU-8,Time Stamps,True,True,True,False,False,False,False,False,False,False
+AU-9,Protection of Audit Information,True,True,True,False,True,False,True,False,False,False
+AU-9(2),Store on Separate Physical Systems or Components,False,False,True,False,True,False,False,False,False,False
+AU-9(3),Cryptographic Protection,False,False,True,False,True,False,False,False,False,False
+AU-9(4),Access by Subset of Privileged Users,False,True,True,False,True,False,True,False,False,False
+AU-10,Non-repudiation,False,False,True,False,False,True,False,False,False,False
+AU-11,Audit Record Retention,True,True,True,False,False,False,False,False,False,False
+AU-12,Audit Record Generation,True,True,True,False,False,False,False,False,False,False
+AU-12(1),System-wide and Time-correlated Audit Trail,False,False,True,False,False,False,False,False,False,False
+AU-12(3),Changes by Authorized Individuals,False,False,True,False,False,False,False,False,False,False
+CA-1,Policy and Procedures,True,True,True,False,False,False,False,False,False,False
+CA-2,Control Assessments,True,True,True,False,False,False,False,False,False,False
+CA-2(1),Independent Assessors,False,True,True,False,False,False,False,False,False,False
+CA-2(2),Specialized Assessments,False,False,True,False,False,False,False,False,False,False
+CA-3,Information Exchange,True,True,True,False,False,False,False,False,False,False
+CA-3(6),Transfer Authorizations,False,False,True,False,False,False,False,False,False,False
+CA-5,Plan of Action and Milestones,True,True,True,False,False,False,False,False,False,False
+CA-6,Authorization,True,True,True,False,False,False,False,False,False,False
+CA-7,Continuous Monitoring,True,True,True,False,False,False,False,False,False,False
+CA-7(1),Independent Assessment,False,True,True,False,False,False,False,False,False,False
+CA-7(4),Risk Monitoring,True,True,True,False,False,False,False,False,False,False
+CA-8,Penetration Testing,False,False,True,False,False,False,False,False,False,False
+CA-8(1),Independent Penetration Testing Agent or Team,False,False,True,False,False,False,False,False,False,False
+CA-9,Internal System Connections,True,True,True,False,False,False,False,False,False,False
+CM-1,Policy and Procedures,True,True,True,False,False,False,False,False,False,False
+CM-2,Baseline Configuration,True,True,True,False,False,False,False,False,False,False
+CM-2(2),Automation Support for Accuracy and Currency,False,True,True,False,False,False,False,False,False,False
+CM-2(3),Retention of Previous Configurations,False,True,True,False,False,False,False,False,False,False
+CM-2(7),Configure Systems and Components for High-risk Areas,False,True,True,False,False,False,False,False,False,False
+CM-3,Configuration Change Control,False,True,True,False,True,False,False,False,True,False
+CM-3(1),"Automated Documentation, Notification, and Prohibition of Changes",False,False,True,False,True,False,False,False,True,False
+CM-3(2),"Testing, Validation, and Documentation of Changes",False,True,True,False,True,False,False,False,True,False
+CM-3(4),Security and Privacy Representatives,False,True,True,False,True,False,True,False,True,False
+CM-3CM-3(6),Cryptography Management,False,False,True,False,True,False,False,False,True,False
+CM-4,Impact Analyses,True,True,True,False,False,False,False,False,False,False
+CM-4(1),Separate Test Environments,False,False,True,False,False,False,False,False,False,False
+CM-4(2),Verification of Controls,False,True,True,False,False,False,False,False,False,False
+CM-5,Access Restrictions for Change,True,True,True,False,True,False,False,False,False,False
+CM-5(1),Automated Access Enforcement and Audit Records,False,False,True,False,True,False,False,False,False,False
+CM-6,Configuration Settings,True,True,True,False,False,False,False,False,False,False
+CM-6(1),"Automated Management, Application, and Verification",False,False,True,False,False,False,False,False,False,False
+CM-6(2),Respond to Unauthorized Changes,False,False,True,False,False,False,False,False,False,False
+CM-7,Least Functionality,True,True,True,False,False,False,False,False,True,False
+CM-7(1),Periodic Review,False,True,True,False,False,False,False,False,True,False
+CM-7(2),Prevent Program Execution,False,True,True,False,False,False,False,False,True,False
+CM-7(5),Authorized Software,False,True,True,False,False,False,False,False,True,False
+CM-8,System Component Inventory,True,True,True,False,False,False,False,False,False,False
+CM-8(1),Updates During Installation and Removal,False,True,True,False,False,False,False,False,False,False
+CM-8(2),Automated Maintenance,False,False,True,False,False,False,False,False,False,False
+CM-8(3),Automated Unauthorized Component Detection,False,True,True,False,False,False,False,False,False,False
+CM-8(4),Accountability Information,False,False,True,False,False,False,False,False,False,False
+CM-9,Configuration Management Plan,False,True,True,False,False,False,False,False,False,False
+CM-10,Software Usage Restrictions,True,True,True,False,False,False,False,False,False,False
+CM-11,User-installed Software,True,True,True,False,False,False,False,False,False,False
+CM-12,Information Location,False,True,True,False,False,False,False,False,False,False
+CM-12(1),Automated Tools to Support Information Location,False,True,True,False,False,False,False,False,False,False
+CP-1,Policy and Procedures,True,True,True,False,False,False,False,False,False,False
+CP-2,Contingency Plan,True,True,True,False,False,False,False,False,False,False
+CP-2(1),Coordinate with Related Plans,False,True,True,False,False,False,False,False,False,False
+CP-2(2),Capacity Planning,False,False,True,False,False,False,False,False,False,False
+CP-2(3),Resume Mission and Business Functions,False,True,True,False,False,False,False,False,False,False
+CP-2(5),Continue Mission and Business Functions,False,False,True,False,False,False,False,False,False,False
+CP-2(8),Identify Critical Assets,False,True,True,False,False,False,False,False,False,False
+CP-3,Contingency Training,True,True,True,False,False,False,False,False,False,False
+CP-3(1),Simulated Events,False,False,True,False,False,False,False,False,False,False
+CP-4,Contingency Plan Testing,True,True,True,False,False,False,False,False,False,False
+CP-4(1),Coordinate with Related Plans,False,True,True,False,False,False,False,False,False,False
+CP-4(2),Alternate Processing Site,False,False,True,False,False,False,False,False,False,False
+CP-6,Alternate Storage Site,False,True,True,False,False,False,False,True,False,False
+CP-6(1),Separation from Primary Site,False,True,True,False,False,False,False,True,False,False
+CP-6(2),Recovery Time and Recovery Point Objectives,False,False,True,False,False,False,False,True,False,False
+CP-6(3),Accessibility,False,True,True,False,False,False,False,True,False,False
+CP-7,Alternate Processing Site,False,True,True,False,False,False,False,True,False,False
+CP-7(1),Separation from Primary Site,False,True,True,False,False,False,False,True,False,False
+CP-7(2),Accessibility,False,True,True,False,False,False,False,True,False,False
+CP-7(3),Priority of Service,False,True,True,False,False,False,False,True,False,False
+CP-7(4),Preparation for Use,False,False,True,False,False,False,False,True,False,False
+CP-8,Telecommunications Services,False,True,True,False,False,False,False,True,False,False
+CP-8(1),Priority of Service Provisions,False,True,True,False,False,False,False,True,False,False
+CP-8(2),Single Points of Failure,False,True,True,False,False,False,False,True,False,False
+CP-8(3),Separation of Primary and Alternate Providers,False,False,True,False,False,False,False,True,False,False
+CP-8(4),Provider Contingency Plan,False,False,True,False,False,False,False,True,False,False
+CP-9,System Backup,True,True,True,False,False,False,False,True,False,False
+CP-9CP-9(1),Testing for Reliability and Integrity,False,True,True,False,False,False,False,True,False,False
+CP-9(2),Test Restoration Using Sampling,False,False,True,False,False,False,False,True,False,False
+CP-9(3),Separate Storage for Critical Information,False,False,True,False,False,False,False,True,False,False
+CP-9(5),Transfer to Alternate Storage Site,False,False,True,False,False,False,False,True,False,False
+CP-9(8),Cryptographic Protection,False,True,True,False,False,False,False,True,False,False
+CP-10,System Recovery and Reconstitution,True,True,True,False,False,False,False,True,False,False
+CP-10(2),Transaction Recovery,False,True,True,False,False,False,False,True,False,False
+CP-10(4),Restore Within Time Period,False,False,True,False,False,False,False,True,False,False
+IA-1,Policy and Procedures,True,True,True,False,False,False,False,False,False,False
+IA-2,Identification and Authentication (organizational Users),True,True,True,True,False,True,False,False,False,False
+IA-2(1),Multi-factor Authentication to Privileged Accounts,True,True,True,True,False,True,False,False,False,False
+IA-2(2),Multi-factor Authentication to Non-privileged Accounts,True,True,True,True,False,True,False,False,False,False
+IA-2(5),Individual Authentication with Group Authentication,False,False,True,False,False,True,False,False,False,False
+IA-2(8),Access to Accounts - Replay Resistant,True,True,True,True,False,False,False,False,False,False
+IA-2(12),Acceptance of Piv Credentials,True,True,True,False,False,False,False,False,False,False
+IA-3,Device Identification and Authentication,False,True,True,True,False,False,False,False,False,False
+IA-4,Identifier Management,True,True,True,True,False,True,False,False,False,False
+IA-4(4),Identify User Status,False,True,True,True,False,True,False,False,False,False
+IA-5,Authenticator Management,True,True,True,True,False,True,False,False,False,False
+IA-5(1),Password-based Authentication,True,True,True,True,False,True,False,False,False,False
+IA-5(2),Public Key-based Authentication,False,True,True,True,False,True,False,False,False,False
+IA-5(6),Protection of Authenticators,False,True,True,True,False,False,True,False,False,False
+IA-6,Authentication Feedback,True,True,True,False,False,False,True,False,False,False
+IA-7,Cryptographic Module Authentication,True,True,True,True,False,False,False,False,False,False
+IA-8,Identification and Authentication (non-organizational Users),True,True,True,True,False,True,False,False,False,False
+IA-8(1),Acceptance of Piv Credentials from Other Agencies,True,True,True,True,False,True,False,False,False,False
+IA-8(2),Acceptance of External Authenticators,True,True,True,True,False,True,False,False,False,False
+IA-8(4),Use of Defined Profiles,True,True,True,True,False,True,False,False,False,False
+IA-11,Re-authentication,True,True,True,True,False,True,False,False,False,False
+IA-12,Identity Proofing,False,True,True,False,False,True,False,False,False,False
+IA-12(2),Identity Evidence,False,True,True,True,False,True,False,False,False,True
+IA-12(3),Identity Evidence Validation and Verification,False,True,True,True,False,True,False,False,False,True
+IA-12(4),In-person Validation and Verification,False,False,True,True,False,True,False,False,False,True
+IA-12(5),Address Confirmation,False,True,True,True,False,True,False,False,False,True
+IR-1,Policy and Procedures,True,True,True,False,False,False,False,False,False,False
+IR-2,Incident Response Training,True,True,True,False,False,False,False,False,False,False
+IR-2(1),Simulated Events,False,False,True,False,False,False,False,False,False,False
+IR-2(2),Automated Training Environments,False,False,True,False,False,False,False,False,False,False
+IR-3,Incident Response Testing,False,True,True,False,False,False,False,False,False,False
+IR-3(2),Coordination with Related Plans,False,True,True,False,False,False,False,False,False,False
+IR-4,Incident Handling,True,True,True,False,False,False,False,False,False,False
+IR-4(1),Automated Incident Handling Processes,False,True,True,False,False,False,False,False,False,False
+IR-4(4),Information Correlation,False,False,True,False,False,False,False,False,False,False
+IR-4(11),Integrated Incident Response Team,False,False,True,False,False,False,False,False,False,False
+IR-5,Incident Monitoring,True,True,True,False,False,False,False,False,False,False
+IR-5(1),"Automated Tracking, Data Collection, and Analysis",False,False,True,False,False,False,False,False,False,False
+IR-6,Incident Reporting,True,True,True,False,False,False,False,False,False,False
+IR-6(1),Automated Reporting,False,True,True,False,False,False,False,False,False,False
+IR-6(3),Supply Chain Coordination,False,True,True,False,False,False,False,False,False,False
+IR-7,Incident Response Assistance,True,True,True,False,False,False,False,False,False,False
+IR-7IR-7(1),Automation Support for Availability of Information and Support,False,True,True,False,False,False,False,False,False,False
+IR-8,Incident Response Plan,True,True,True,False,False,False,False,False,False,False
+MA-1,Policy and Procedures,True,True,True,False,False,False,False,False,False,False
+MA-2,Controlled Maintenance,True,True,True,False,True,False,True,False,False,False
+MA-2(2),Automated Maintenance Activities,False,False,True,False,True,False,False,False,False,False
+MA-3,Maintenance Tools,False,True,True,False,True,False,False,False,False,False
+MA-3(1),Inspect Tools,False,True,True,False,True,False,False,False,False,False
+MA-3(2),Inspect Media,False,True,True,False,True,False,False,False,False,False
+MA-3(3),Prevent Unauthorized Removal,False,True,True,False,True,False,False,False,False,False
+MA-4,Nonlocal Maintenance,True,True,True,False,True,False,False,False,False,True
+MA-4(3),Comparable Security and Sanitization,False,False,True,False,True,False,True,False,False,True
+MA-5,Maintenance Personnel,True,True,True,False,True,False,False,False,False,False
+MA-5(1),Individuals Without Appropriate Access,False,False,True,False,True,False,False,False,False,False
+MA-6,Timely Maintenance,False,True,True,False,False,False,False,False,False,False
+MP-1,Policy and Procedures,True,True,True,False,False,False,False,False,False,False
+MP-2,Media Access,True,True,True,False,True,False,True,False,False,False
+MP-3,Media Marking,False,True,True,False,False,False,False,False,False,False
+MP-4,Media Storage,False,True,True,False,True,False,True,False,False,False
+MP-5,Media Transport,False,True,True,False,True,False,True,False,False,False
+MP-6,Media Sanitization,True,True,True,False,True,False,False,False,False,False
+MP-6(1),"Review, Approve, Track, Document, and Verify",False,False,True,False,True,False,True,False,False,False
+MP-6(2),Equipment Testing,False,False,True,False,True,False,True,False,False,False
+MP-6(3),Nondestructive Techniques,False,False,True,False,True,False,True,False,False,False
+MP-7,Media Use,True,True,True,False,True,False,True,False,False,False
+PE-1,Policy and Procedures,True,True,True,False,False,False,False,False,False,False
+PE-2,Physical Access Authorizations,True,True,True,False,True,False,False,False,False,False
+PE-3,Physical Access Control,True,True,True,True,False,True,False,False,False,False
+PE-3(1),System Access,False,False,True,True,False,True,False,False,False,False
+PE-4,Access Control for Transmission,False,True,True,False,True,False,True,False,False,False
+PE-5,Access Control for Output Devices,False,True,True,False,False,False,True,False,False,False
+PE-6,Monitoring Physical Access,True,True,True,False,False,False,False,False,False,False
+PE-6(1),Intrusion Alarms and Surveillance Equipment,False,True,True,False,False,False,False,False,False,False
+PE-6(4),Monitoring Physical Access to Systems,False,False,True,False,False,False,False,False,False,False
+PE-8,Visitor Access Records,True,True,True,False,False,True,False,False,False,False
+PE-8(1),Automated Records Maintenance and Review,False,False,True,False,False,False,False,False,False,False
+PE-9,Power Equipment and Cabling,False,True,True,False,False,False,False,False,False,False
+PE-10,Emergency Shutoff,False,True,True,False,False,False,False,False,False,False
+PE-11,Emergency Power,False,True,True,False,False,False,False,False,False,False
+PE-11(1),Alternate Power Supply - Minimal Operational Capability,False,False,True,False,False,False,False,False,False,False
+PE-12,Emergency Lighting,True,True,True,False,False,False,False,False,False,False
+PE-13,Fire Protection,True,True,True,False,False,False,False,False,False,False
+PE-13(1),Detection Systems - Automatic Activation and Notification,False,True,True,False,False,False,False,False,False,False
+PE-13(2),Suppression Systems - Automatic Activation and Notification,False,False,True,False,False,False,False,False,False,False
+PE-14,Environmental Controls,True,True,True,False,False,False,False,False,False,False
+PE-15,Water Damage Protection,True,True,True,False,False,False,False,False,False,False
+PE-15(1),Automation Support,False,False,True,False,False,False,False,False,False,False
+PE-16,Delivery and Removal,True,True,True,False,False,False,False,False,False,False
+PE-17,Alternate Work Site,False,True,True,False,False,False,False,False,False,False
+PE-18,Location of System Components,False,False,True,False,False,False,False,False,False,False
+PL-1,Policy and Procedures,True,True,True,False,False,False,False,False,False,False
+PL-2,System Security and Privacy Plans,True,True,True,False,False,False,False,False,False,False
+PL-4,Rules of Behavior,True,True,True,False,False,False,False,False,False,False
+PL-4(1),Social Media and External Site/application Usage Restrictions,True,True,True,False,False,False,False,False,False,False
+PL-8,Security and Privacy Architectures,False,True,True,False,False,False,False,False,False,False
+PL-10,Baseline Selection,True,True,True,False,False,False,False,False,False,False
+PL-11,Baseline Tailoring,True,True,True,False,False,False,False,False,False,False
+PS-1,Policy and Procedures,True,True,True,False,False,False,False,False,False,False
+PS-2,Position Risk Designation,True,True,True,False,False,False,False,False,False,False
+PS-3,Personnel Screening,True,True,True,False,False,False,False,False,False,False
+PS-4,Personnel Termination,True,True,True,False,False,False,False,False,False,False
+PS-4(2),Automated Actions,False,False,True,False,False,False,False,False,False,False
+PS-5,Personnel Transfer,True,True,True,False,False,False,False,False,False,False
+PS-6,Access Agreements,True,True,True,False,False,False,False,False,False,False
+PS-7,External Personnel Security,True,True,True,False,False,False,False,False,False,False
+PS-8,Personnel Sanctions,True,True,True,False,False,False,False,False,False,False
+PS-9,Position Descriptions,True,True,True,False,False,False,False,False,False,False
+RA-1,Policy and Procedures,True,True,True,False,False,False,False,False,False,False
+RA-2,Security Categorization,True,True,True,False,False,False,False,False,False,False
+RA-3,Risk Assessment,True,True,True,False,False,False,False,False,False,False
+RA-3(1),Supply Chain Risk Assessment,True,True,True,False,False,False,False,False,False,False
+RA-5,Vulnerability Monitoring and Scanning,True,True,True,False,False,False,False,False,False,False
+RA-5(2),Update Vulnerabilities to Be Scanned,True,True,True,False,False,False,False,False,False,False
+RA-5(4),Discoverable Information,False,False,True,False,False,False,False,False,False,False
+RA-5(5),Privileged Access,False,True,True,False,False,False,False,False,False,False
+RA-5(11),Public Disclosure Program,True,True,True,False,False,False,False,False,False,False
+RA-7,Risk Response,True,True,True,False,False,False,False,False,False,False
+RA-9,Criticality Analysis,False,True,True,False,False,False,False,False,False,False
+SA-1,Policy and Procedures,True,True,True,False,False,False,False,False,False,False
+SA-2,Allocation of Resources,True,True,True,False,False,False,False,False,False,False
+SA-3,System Development Life Cycle,True,True,True,False,False,False,False,False,False,False
+SA-4,Acquisition Process,True,True,True,False,False,False,False,False,False,False
+SA-4(1),Functional Properties of Controls,False,True,True,False,False,False,False,False,False,False
+SA-4(2),Design and Implementation Information for Controls,False,True,True,False,False,False,False,False,False,False
+SA-4(5),"System, Component, and Service Configurations",False,False,True,False,False,False,False,False,False,False
+SA-4(9),"Functions, Ports, Protocols, and Services in Use",False,True,True,False,False,False,False,False,False,False
+SA-4(10),Use of Approved Piv Products,True,True,True,False,False,False,False,False,False,False
+SA-5,System Documentation,True,True,True,False,False,False,False,False,False,False
+SA-8,Security and Privacy Engineering Principles,True,True,True,False,False,False,False,False,False,False
+SA-9,External System Services,True,True,True,False,False,False,False,False,False,False
+SA-9(2),"Identification of Functions, Ports, Protocols, and Services",False,True,True,False,False,False,False,False,False,False
+SA-10,Developer Configuration Management,False,True,True,False,True,False,False,False,False,False
+SA-11,Developer Testing and Evaluation,False,True,True,False,False,False,False,False,False,False
+SA-15,"Development Process, Standards, and Tools",False,True,True,False,False,False,False,False,False,False
+SA-15(3),Criticality Analysis,False,True,True,False,False,False,False,False,False,False
+SA-16,Developer-provided Training,False,False,True,False,False,False,False,False,False,False
+SA-17,Developer Security and Privacy Architecture and Design,False,False,True,False,False,False,False,False,False,False
+SA-21,Developer Screening,False,False,True,False,False,False,False,False,False,False
+SA-22,Unsupported System Components,True,True,True,False,False,False,False,False,False,False
+SC-1,Policy and Procedures,True,True,True,False,False,False,False,False,False,False
+SC-2,Separation of System and User Functionality,False,True,True,False,False,False,False,False,True,False
+SC-3,Security Function Isolation,False,False,True,False,False,False,False,False,True,False
+SC-4,Information in Shared System Resources,False,True,True,False,False,False,True,False,False,False
+SC-5,Denial-of-service Protection,True,True,True,False,False,False,False,True,False,False
+SC-7,Boundary Protection,True,True,True,False,False,False,False,False,False,True
+SC-7(3),Access Points,False,True,True,False,False,False,False,False,False,True
+SC-7(4),External Telecommunications Services,False,True,True,False,True,False,True,False,False,True
+SC-7(5),Deny by Default - Allow by Exception,False,True,True,False,False,False,False,False,False,True
+SC-7(7),Split Tunneling for Remote Devices,False,True,True,False,False,False,False,False,False,True
+SC-7(8),Route Traffic to Authenticated Proxy Servers,False,True,True,False,False,False,False,False,False,True
+SC-7(18),Fail Secure,False,False,True,False,False,False,False,False,False,True
+SC-7(21),Isolation of System Components,False,False,True,False,False,False,False,False,False,True
+SC-8,Transmission Confidentiality and Integrity,False,True,True,False,True,False,True,False,False,False
+SC-8(1),Cryptographic Protection,False,True,True,False,True,False,True,False,False,False
+SC-10,Network Disconnect,False,True,True,True,False,False,False,False,False,True
+SC-12,Cryptographic Key Establishment and Management,True,True,True,False,True,False,True,False,False,False
+SC-12(1),Availability,False,False,True,False,False,False,False,True,False,False
+SC-13,Cryptographic Protection,True,True,True,False,True,False,True,False,False,False
+SC-15,Collaborative Computing Devices and Applications,True,True,True,False,False,False,True,False,False,False
+SC-17,Public Key Infrastructure Certificates,False,True,True,True,False,True,False,False,False,False
+SC-18,Mobile Code,False,True,True,False,False,False,False,False,False,False
+SC-20,Secure Name/address Resolution Service (authoritative Source),True,True,True,True,True,True,False,False,False,False
+SC-21,Secure Name/address Resolution Service (recursive or Caching Resolver),True,True,True,True,True,True,False,False,False,False
+SC-22,Architecture and Provisioning for Name/address Resolution Service,True,True,True,False,False,False,True,True,False,False
+SC-23,Session Authenticity,False,True,True,True,True,False,True,False,False,False
+SC-24,Fail in Known State,False,False,True,False,True,False,True,True,False,False
+SC-28,Protection of Information at Rest,False,True,True,False,True,False,True,False,False,False
+SC-28(1),Cryptographic Protection,False,True,True,False,True,False,True,False,False,False
+SC-39,Process Isolation,True,True,True,False,False,False,False,False,True,False
+SI-1,Policy and Procedures,True,True,True,False,False,False,False,False,False,False
+SI-2,Flaw Remediation,True,True,True,False,True,False,False,False,True,True
+SI-2(2),Automated Flaw Remediation Status,False,True,True,False,True,False,False,False,True,True
+SI-3,Malicious Code Protection,True,True,True,False,True,False,False,False,True,True
+SI-4,System Monitoring,True,True,True,False,False,False,False,True,False,True
+SI-4(2),Automated Tools and Mechanisms for Real-time Analysis,False,True,True,False,False,False,False,True,False,True
+SI-4(4),Inbound and Outbound Communications Traffic,False,True,True,False,False,False,False,False,False,True
+SI-4(5),System-generated Alerts,False,True,True,False,False,False,False,False,False,True
+SI-4(10),Visibility of Encrypted Communications,False,False,True,False,False,False,False,False,False,True
+SI-4(12),Automated Organization-generated Alerts,False,False,True,False,False,False,False,False,False,True
+SI-4(14),Wireless Intrusion Detection,False,False,True,False,False,False,False,False,False,True
+SI-4(20),Privileged Users,False,False,True,False,False,True,False,False,True,True
+SI-4(22),Unauthorized Network Services,False,False,True,False,False,False,False,False,True,True
+SI-5,"Security Alerts, Advisories, and Directives",True,True,True,False,False,False,False,False,False,False
+SI-5(1),Automated Alerts and Advisories,False,False,True,False,False,False,False,False,False,False
+SI-6,Security and Privacy Function Verification,False,False,True,False,True,False,True,False,True,False
+SI-7,"Software, Firmware, and Information Integrity",False,True,True,False,True,False,False,False,True,False
+SI-7(1),Integrity Checks,False,True,True,False,True,False,False,False,False,False
+SI-7(2),Automated Notifications of Integrity Violations,False,False,True,False,True,False,False,False,False,False
+SI-7(5),Automated Response to Integrity Violations,False,False,True,False,True,False,False,False,False,False
+SI-7(7),Integration of Detection and Response,False,True,True,False,True,False,False,False,False,False
+SI-7(15),Code Authentication,False,False,True,False,True,False,False,False,False,False
+SI-8,Spam Protection,False,True,True,False,False,False,False,False,False,False
+SI-8(2),Automatic Updates,False,True,True,False,False,False,False,False,False,False
+SI-10,Information Input Validation,False,True,True,False,True,False,True,True,True,False
+SI-11,Error Handling,False,True,True,False,False,False,True,False,False,False
+SI-12,Information Management and Retention,True,True,True,False,False,False,False,False,False,False
+SI-16,Memory Protection,False,True,True,False,False,False,False,False,True,False
+SR-1,Policy and Procedures,True,True,True,False,False,False,False,False,False,False
+SR-2,Supply Chain Risk Management Plan,True,True,True,False,False,False,False,False,False,False
+SR-2(1),Establish Scrm Team,True,True,True,False,False,False,False,False,False,False
+SR-3,Supply Chain Controls and Processes,True,True,True,False,False,False,False,False,False,False
+SR-5,"Acquisition Strategies, Tools, and Methods",True,True,True,False,False,False,False,False,False,False
+SR-6,Supplier Assessments and Reviews,False,True,True,False,False,False,False,False,False,False
+SR-8,Notification Agreements,True,True,True,False,False,False,True,False,False,False
+SR-9,Tamper Resistance and Detection,False,False,True,False,True,False,False,False,False,False
+SR-9(1),Multiple Stages of System Development Life Cycle,False,False,True,False,False,False,False,False,False,False
+SR-10,Inspection of Systems or Components,True,True,True,False,True,False,False,False,False,False
+SR-11,Component Authenticity,True,True,True,False,True,True,False,False,False,False
+SR-11(1),Anti-counterfeit Training,True,True,True,False,False,False,False,False,False,False
+SR-11(2),Configuration Control for Component Service and Repair,True,True,True,False,True,False,False,False,False,False
+SR-12,Component Disposal,True,True,True,False,False,False,True,False,False,False
