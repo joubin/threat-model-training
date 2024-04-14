@@ -1,2 +1,4 @@
 *.code-workspace
 private/**/
+.OPENAI_API_KEY
+.DS_Store
